@@ -27,7 +27,11 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
 
     return (
         <div className="modal-overlay" onClick={onClose}>
-            <Draggable handle=".modal-drag-handle" nodeRef={nodeRef}>
+            <Draggable 
+                handle=".modal-drag-handle" 
+                cancel=".close-button"
+                nodeRef={nodeRef}
+            >
 
             <div
                 ref={nodeRef}
