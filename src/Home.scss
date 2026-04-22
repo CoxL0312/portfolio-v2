@@ -1,0 +1,29 @@
+.home-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  button {
+    background-color: var(--modal-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px var(--accent-bg);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

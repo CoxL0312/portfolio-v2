@@ -1,0 +1,109 @@
+.work-container {
+  text-align: left;
+}
+
+.work-intro {
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.experience-section, .projects-section {
+  margin-bottom: 2.5rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-h);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+}
+
+.job-card {
+  margin-bottom: 1.5rem;
+
+  h4 {
+    font-size: 1.1rem;
+    color: var(--text-h);
+    margin: 0 0 0.25rem 0;
+  }
+
+  .job-title {
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .job-description {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}
+
+.project-list {
+  border-top: 1px solid var(--border);
+}
+
+.project-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.project-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .project-title {
+    color: var(--text-h);
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .project-type {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .arrow {
+    transition: transform 0.2s ease;
+    color: var(--accent);
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+    &:hover {
+    .project-title {
+      color: var(--accent);
+    }
+  }
+}
+
+.project-content {
+  padding-bottom: 1.5rem;
+  
+  .project-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}

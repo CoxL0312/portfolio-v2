@@ -1,0 +1,60 @@
+// src/components/pages/Faq.scss
+
+.faq-container {
+  text-align: left;
+}
+
+.faq-intro {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  border-top: 1px solid var(--border);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-h);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  &:hover {
+    color: var(--accent);
+  }
+
+  .arrow {
+    transition: transform 0.2s ease;
+    color: var(--accent);
+    flex-shrink: 0; // Prevents the arrow from squishing on mobile if the question is long
+    margin-left: 1rem;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.faq-content {
+  padding-bottom: 1.5rem;
+  
+  .faq-answer {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+}

@@ -1,0 +1,109 @@
+.academics-container {
+  text-align: left;
+}
+
+.academics-header {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-h);
+  }
+
+  .timeline {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .gpa {
+    color: var(--text);
+  }
+}
+
+
+.courses-section {
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-h);
+  }
+}
+
+.course-list {
+  border-top: 1px solid var(--border);
+}
+
+.course-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.course-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  color: var(--text-h);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+
+    &:hover {
+    color: var(--accent);
+  }
+  
+  .arrow {
+    transition: transform 0.2s ease;
+    color: var(--accent);
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.course-description {
+  padding-bottom: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.focus-section {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-h);
+  }
+
+  .focus-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .focus-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+
+    .bullet {
+      color: var(--accent);
+      margin-right: 0.75rem;
+      font-size: 1.2rem;
+    }
+  }
+}
