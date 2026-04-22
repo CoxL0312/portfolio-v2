@@ -20,29 +20,16 @@ function PortfolioHome() {
     const { isDark, toggleTheme } = useTheme();
 
     return (
-        <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "4rem, 2rem", textAlign: "center" }}>
-            <header style={{ marginBottom: "4rem" }}>
-                <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>Nice to meet you, I'm Lindsey!</h1>
-                <p style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Welcome to my Portfolio</p>
-            </header>
+        <main className="home-container">
 
-            <button
-                onClick={toggleTheme}
-                style={{
-                    position: "absolute",
-                    top: "2rem",
-                    right: "2rem",
-                    background: "none",
-                    border: "1px solid var(--text-color)",
-                    color: "var(--text-color)",
-                    padding: "0.5rem 1rem",
-                    borderRadius: "20px",
-                    cursor: "pointer"
-                }}
-            >
+            <button className="theme-toggle" onClick={toggleTheme}>
                 {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
             </button>
 
+            <header className="home-header">
+                <h1>Nice to meet you, I'm Lindsey!</h1>
+                <p>Welcome to my Portfolio</p>
+            </header>
 
             <nav className="home-nav">
                     <button onClick={() => setActiveWindow("about")}>About</button>

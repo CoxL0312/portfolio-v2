@@ -1,3 +1,49 @@
+// src/Home.scss
+
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.home-header {
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 0.5rem;
+    color: var(--text-h);
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+  }
+}
+
+
 .home-nav {
   display: flex;
   gap: 1rem;
@@ -25,5 +71,26 @@
     &:active {
       transform: translateY(0);
     }
+  }
+}
+
+/* ---------------------------------- */
+/* Mobile-Specific Overrides          */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 2rem 1rem;
+  }
+
+  .theme-toggle {
+    /* Shrink the button and move it to a safe spot on mobile */
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .home-header {
+    padding-top: 4rem; /* Extra breathing room on phones */
   }
 }
